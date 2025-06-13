@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register for an Event</title>
+  <style>
+    /* ---------- Page & Layout ---------- */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f5f5f5;
+      color: #3e2723;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #6d4c41;
+      padding: 1rem;
+      text-align: center;
+      position: fixed; top: 0; width: 100%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      color: #fff;
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    .container {
+      max-width: 480px;
+      margin: 120px auto 40px;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      animation: fadeIn 0.4s ease-out;
+    }
+
+    /* ---------- Form Elements ---------- */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin: 0.75rem 0 0.25rem;
+      font-weight: 600;
+      color: #6d4c41;
+    }
+    select, input[type="text"], input[type="email"], input[type="number"] {
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+      background: #faf3e7;
+      transition: border-color 0.2s;
+    }
+    select:hover, input[type="text"]:hover, input[type="email"]:hover, input[type="number"]:hover {
+      border-color: #6d4c41;
+    }
+    select:focus, input:focus {
+      outline: none;
+      border-color: #6d4c41;
+      background: #f1e0b7;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.85rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 6px;
+      background: #6d4c41;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #3e2723;
+    }
+
+    /* ---------- Responsive & Animation ---------- */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 500px) {
+      .container { margin: 100px 10px; padding: 1.5rem; }
+      header h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>स्नेह - Care for the Elderly</h1>
+  </header>
+
+  <div class="container">
+    <h2>Register for an Event</h2>
+    <form action="/submit" method="POST">
+      <label for="event">Select Event:</label>
+      <select id="event" name="event" required>
+        <option value="gala">Annual Charity Gala</option>
+        <option value="workshop">Health and Wellness Workshop</option>
+        <option value="volunteer">Volunteer Meet-up</option>
+        <option value="celebration">Festive Season Celebration</option>
+        <option value="auction">Fundraising Auction</option>
+        <option value="talent_show">Senior Talent Show</option>
+        <option value="yoga">Yoga for Elders</option>
+        <option value="cooking">Cooking Class with Elders</option>
+      </select>
+
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="contact">Contact Number:</label>
+      <input type="text" id="contact" name="contact" required />
+
+      <label for="attendees">Number of Attendees:</label>
+      <input type="number" id="attendees" name="attendees" required />
+
+      <button type="submit"a href="">Register</button>
+    </form>
+  </div> 
+
+</body>
+</html>

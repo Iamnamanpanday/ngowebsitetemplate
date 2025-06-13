@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - स्नेह - Care for the Elderly</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and page layout */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5; /* Light beige background */
+            color: #3e2723; /* Dark brown text */
+            line-height: 1.6;
+            padding-top: 80px; /* To accommodate fixed header */
+        }
+
+        /* Header styles */
+        header {
+            background-color: #6d4c41; /* Medium brown */
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            color: #fff; /* Soft white */
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            font-size: 1.2em;
+        }
+
+        .nav-links a {
+            color: #fff; /* Soft white */
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #3e2723; /* Dark brown */
+        }
+
+        /* Events Section */
+        .events {
+            margin: 40px 20px;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .events h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #6d4c41; /* Medium brown */
+        }
+
+        .event-item {
+            background-color: #f0e1d7; /* Light beige background */
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-item h3 {
+            color: #3e2723; /* Dark brown */
+            font-size: 2em;
+        }
+
+        .event-item p {
+            font-size: 1.1em;
+            color: #3e2723;
+            margin-bottom: 10px;
+        }
+
+        .event-item .date {
+            font-weight: bold;
+            color: #6d4c41;
+        }
+
+        .event-item .register-button {
+            background-color: #6d4c41; /* Medium brown */
+            color: #fff; /* Soft white */
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .event-item .register-button:hover {
+            background-color: #3e2723; /* Dark brown */
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #6d4c41; /* Medium brown */
+            color: #fff; /* Soft white */
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            .events {
+                padding: 30px;
+            }
+
+            .events h2 {
+                font-size: 2em;
+            }
+
+            .event-item h3 {
+                font-size: 1.5em;
+            }
+
+            .event-item p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>स्नेह - Care for the Elderly</h1>
+            <ul class="nav-links">
+                <li><a href="sneh.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="shopsneh.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Events Section -->
+    <div class="events" id="events">
+        <h2>Upcoming Events</h2>
+
+        <!-- Event Item -->
+        <div class="event-item">
+            <h3>Annual Charity Gala</h3>
+            <p>Join us for an evening of music, dining, and celebration to support our elderly residents. Your attendance will help fund vital programs.</p>
+            <p class="date">Date: 25th December 2024 | Time: 6:00 PM</p>
+            <a href="http://127.0.0.1:5000/register" class="register-button">Register Now</a>
+        </div>
+
+        <!-- Event Item -->
+        <div class="event-item">
+            <h3>Health and Wellness Workshop</h3>
+            <p>A special event focusing on promoting healthy lifestyles for the elderly. Featuring guest speakers and fitness instructors.</p>
+            <p class="date">Date: 10th January 2025 | Time: 10:00 AM</p>
+            <a href="http://127.0.0.1:5000/register" class="register-button">Register Now</a>
+        </div>
+
+        <!-- Event Item -->
+        <div class="event-item">
+            <h3>Volunteer Meet-up</h3>
+            <p>We invite all volunteers to meet and discuss upcoming projects and how we can best support our elderly community.</p>
+            <p class="date">Date: 15th February 2025 | Time: 4:00 PM</p>
+            <a href="http://127.0.0.1:5000/register" class="register-button">Register Now</a>
+        </div>
+
+        <!-- Event Item -->
+        <div class="event-item">
+            <h3>Festive Season Celebration</h3>
+            <p>A community celebration to spread joy among the elderly during the festive season. Enjoy fun activities, games, and food!</p>
+            <p class="date">Date: 20th March 2025 | Time: 5:00 PM</p>
+            <a href="http://127.0.0.1:5000/register" class="register-button">Register Now</a>
+        </div>
+
+        <!-- Event Item -->
+        <div class="event-item">
+            <h3>Fundraising Auction</h3>
+            <p>Join us for a night of bidding and helping raise funds to support the elderly community. Exclusive items and experiences available!</p>
+            <p class="date">Date: 5th April 2025 | Time: 7:00 PM</p>
+            <a href="http://127.0.0.1:5000/register" class="register-button">Register Now</a>
+        </div>
+
+        <!-- Event Item -->
+        <div class="event-item">
+            <h3>Senior Talent Show</h3>
+            <p>Come witness the talent and creativity of our elderly community in a fun-filled talent show.</p>
+            <p class="date">Date: 10th May 2025 | Time: 4:00 PM</p>
+            <a href="http://127.0.0.1:5000/register" class="register-button">Register Now</a>
+        </div>
+
+        <!-- Event Item -->
+        <div class="event-item">
+            <h3>Yoga for Elders</h3>
+            <p>Join us for a relaxing yoga session designed specifically for seniors. Focus on flexibility, breathing, and well-being.</p>
+            <p class="date">Date: 20th June 2025 | Time: 9:00 AM</p>
+            <a href="http://127.0.0.1:5000/register" class="register-button">Register Now</a>
+        </div>
+
+        <!-- Event Item -->
+        <div class="event-item">
+            <h3>Cooking Class with Elders</h3>
+            <p>Experience the joy of cooking with the elderly. Learn traditional recipes while connecting with the community.</p>
+            <p class="date">Date: 15th July 2025 | Time: 11:00 AM</p>
+            <a href="http://127.0.0.1:5000/register" class="register-button">Register Now</a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 स्नेह - Care for the Elderly. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Success Stories - स्नेह</title>
+  <style>
+    /* Reset & global */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      color: #3e2723;
+      line-height: 1.6;
+      padding-top: 80px; /* for fixed header */
+    }
+
+    /* Header/nav */
+    header {
+      background-color: #6d4c41;
+      padding: 15px 20px;
+      position: fixed; top: 0; width: 100%; z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header nav { display: flex; justify-content: space-between; align-items: center; }
+    header h1 { color: #fff; font-size: 1.8em; }
+    .nav-links { list-style: none; display: flex; gap: 20px; }
+    .nav-links li { }
+    .nav-links a {
+      color: #fff; text-decoration: none; padding: 8px 12px; border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    .nav-links a:hover { background-color: #3e2723; }
+
+    /* Success Stories section */
+    #success-stories {
+      background-color: #f5f5f5;
+      padding: 40px 20px;
+    }
+    #success-stories h2 {
+      text-align: center;
+      color: #6d4c41;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+    .stories-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .story-card {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .story-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .story-card h3 {
+      color: #6d4c41;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    .story-card p {
+      color: #555;
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #6d4c41;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>स्नेह – Care for the Elderly</h1>
+      <ul class="nav-links">
+        <li><a href="C:\Users\Naman\Desktop\SNEH CAPSTONE\templates\sneh.html">Home</a></li>
+        <li><a href="C:\Users\Naman\Downloads\processing-4.3.4-windows-x64\processing-4.3.4\modes\java\mode\about.html">About</a></li>
+        <li><a href="C:\Users\Naman\Desktop\SNEH CAPSTONE\templates\events.html">Events</a></li>
+        <li><a href="C:\Users\Naman\Desktop\SNEH CAPSTONE\templates\volunteer.html">Volunteer</a></li>
+        <li><a href="C:\Users\Naman\Desktop\SNEH CAPSTONE\templates\donations.html">Donate</a></li>
+        <li><a href="C:\Users\Naman\Desktop\SNEH CAPSTONE\templates\stories.html">Stories</a></li>
+        <li><a href="C:\Users\Naman\Desktop\SNEH CAPSTONE\templates\contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="success-stories">
+    <h2>Success Stories</h2>
+    <div class="stories-container">
+      <!-- Story 1 -->
+      <div class="story-card">
+        <img src="https://thumbs.dreamstime.com/b/smart-young-indian-girl-old-woman-looking-mobile-phone-busy-talking-sitting-bench-park-delhi-india-184214054.jpg" alt="Sunita Aunty's Journey">
+        <h3>Sunita Aunty's Journey</h3>
+        <p>"After joining Sneh, I found a new family and regained my confidence. I am now more active, happy, and engaged!"</p>
+      </div>
+      <!-- Story 2 -->
+      <div class="story-card">
+        <img src="https://i.pinimg.com/736x/91/21/df/9121df741fe7b44228fd5100a657837a.jpg" alt="Rajesh Uncle's Transformation">
+        <h3>Rajesh Uncle's Health Transformation</h3>
+        <p>"The health programs at Sneh have significantly improved my well-being. I feel stronger and healthier every day!"</p>
+      </div>
+      <!-- Story 3 -->
+      <div class="story-card">
+        <img src="https://www.shutterstock.com/image-photo/young-girl-helping-old-lady-260nw-223178245.jpg" alt="Anjali's New Beginning">
+        <h3>A New Beginning for Anjali</h3>
+        <p>"At Sneh, I rediscovered my passion for painting. It’s given me a new sense of purpose and creativity!"</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Sneh Foundation. All rights reserved.</p>
+  </footer>
+</body>
+</html>
